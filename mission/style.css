@@ -1,4 +1,62 @@
-footer{
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+    margin: 75px;
+    margin-left: 300px;
+    margin-right: 300px;
+    
+    border: solid 1px black;
+    
 
+}
+
+header{
     text-align: center;
+    margin-bottom: 75px;
+    padding-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    letter-spacing: 2px;
+    border-bottom: solid 1px black;
+    
+}
+
+
+
+
+main{
+    margin-left: 175px;
+    margin-right: 175px;
+    border-color: black;
+    border: 5px;
+}
+
+i{
+    padding-top: 20px;
+}
+
+li{
+    padding: 10px;
+}
+
+#subtitle{
+    color: #006EB6;
+    
+}
+
+
+
+
+
+
+
+
+footer{
+    margin: 50px;
+    text-align: center;
+}
+
+img{
+    width: 200px;
 }
