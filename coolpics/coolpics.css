@@ -17,7 +17,7 @@
   right:0;
 
   height: 100%;
-  background-color: (0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.75);
 
   z-index: 10;
  }
@@ -25,9 +25,17 @@
  img{
     max-width: 100%;
     display: inline block;
+    object-fit: cover
+ }
+
+ img .gallery{
     height: 250px;
     width: 250px;
-    object-fit: cover
+ }
+
+ img .viewer{
+  height: 500px;
+  width: 500px;
  }
 
  body {
@@ -61,7 +69,7 @@
     padding: 10px;
   }
 
-  header .hide{
+  .hide{
     display: none
   }
 
