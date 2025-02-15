@@ -1,0 +1,98 @@
+:root{
+    --red: #AF1B3F;
+    --gold: #EFC69B;
+    --purple: #473144;
+
+}
+
+body{
+    font-family:Helvetica, Arial, sans-serif;
+}
+
+h1{
+    font-family: Helvetica, Impact, serif
+}
+
+main{
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+}
+
+
+/* Nav Grid */
+
+.nav-grid{
+    display: grid;
+
+    grid-template-columns: 75px 75px 75px;
+
+    justify-content: end;
+    justify-items: right;
+
+    margin-right: 50px;
+}
+ nav{ 
+    border-top: 1px;
+    border-color: var(--gold);
+ }
+
+
+/* Filter Grid */
+
+.filter{
+    grid-column: 2/3;
+}
+
+/* Book Description Grid */
+
+.books-desc{
+
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+
+    grid-column: 1/2;
+}
+
+
+
+
+/* Book Picture Grid & CSS */
+.book-pics{
+    grid-column: 2/3;
+}
+
+.book-pic-1{
+    max-height: 700px;
+}
+
+.book-pic-2{
+    max-height: 700px;
+}
+
+
+/* Book Details Grid & CSS */
+.book-det-1{
+    margin-top: 21px;
+
+    max-height: 508px;
+
+    height: 100%;
+}
+
+.book-det-2{
+    max-height: 700px;
+
+    height: 100%;
+}
+
+.book-details{
+    grid-column: 1/2;
+}
+
+
+
+
+
+
