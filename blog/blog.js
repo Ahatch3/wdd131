@@ -41,31 +41,45 @@ const articles = [
 
 const book_details_container = document.querySelector('book-details');
 
-const book_pics_container = document.querySelector('book-pics')
+const book_pics_container = document.querySelector('book-pics');
 
 
+articles.forEach(item => {
+	const newDet = document.createElement("detail");
+	newDet.classList.add(".book-det");
 
+	const newPic = document.createElement("pic");
+	newPic.classList.add(".book-pic");
 
 	const det_html= 
 	`<div class = "book-det-1">
 		<p class = "book-det-date">
-			${date}
+			${item.date}
 		</p>
 		<p>
-			${ages}
+			${item.ages}
 		</p>
 		<p>
-			${genre}
+			${item.genre}
 		</p>
 		<p>
-			${stars}
+			${item.stars}
 		</p>
 	</div>`
 
 	const pic_html=
 	`<div class = book-pic-1>
-		<h1>${title}</h1>
-		<img src=${imgSrc} alt=${imgAlt}>
-		<p>${desc}</p>
+		<h1>${item.title}</h1>
+		<img src=${item.imgSrc} alt=${item.imgAlt}>
+		<p>${item.desc}</p>
 	</div>`
 
+
+	newDet.innerHTML = det_html;
+	newPic.innerHTML = pic_html;
+
+
+            book_details_container.appendChild(newDet);
+			book_pics_container.appendChild(newPic);
+
+});
