@@ -1,0 +1,52 @@
+/* Global Settings */
+
+*{
+    font-family: Arial, Helvetica,sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+/* Header and Headings */
+header{
+    display: flex;
+
+    border-bottom: 1px solid black;
+
+    align-items: center;
+    justify-content: center;
+    
+}
+.title-pic img{
+    max-width: 150px;
+}
+
+h1,h2,h3{
+    font-family: 'Amatic SC';
+}
+
+h1{
+    font-size: 5em;
+}
+
+
+/* Body */
+
+
+/* Footer and Social Media Tags */
+
+footer{
+    display: flex;
+    align-items: flex-end;
+}
+.social{
+    display: flex;
+}
+
+.social a{
+    flex: 0 0 2em;
+    align-self: right;
+}
+
