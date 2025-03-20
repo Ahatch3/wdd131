@@ -279,3 +279,49 @@ const recipes = [
 		rating: 4
 	}
 ]
+
+
+console.log(Math.floor(Math.random()*5))
+
+
+function recipeTemplate(recipe) {
+	return `<div class="recipe">
+
+            
+            <div class="recipe-pic">
+                <img src="${recipe.image}}" alt="${recipe.description}">
+            </div>
+
+            <div class="recipe-extras">
+                <div class="tags">
+					${tagsTemplate(recipe.tags)}
+                </div>
+
+                <div class="recipe-info">
+                    <h2 class="recipe-title">
+                        ${recipe.name}
+                    </h2>
+                    <div class="recipe-description">
+                        ${recipe.description}
+                    </div>
+                </div>
+
+
+                <span class="rating" role="img" 
+                aria-label="Rating: 4 out of 5 stars">
+                    ${ratingTemplate(recipe.rating)}
+                </span>
+            </div>
+        </div>`;
+}
+
+
+
+function tagsTemplate(tags){
+
+}
+
+
+function ratingTemplate(rating){
+	
+}
