@@ -256,34 +256,52 @@ button{
 
 
 
-@media (max-width: 800px) {
-    header, main, footer {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center align items */
+@media (max-width: 1000px) {
+    header {
+        flex-direction: column; 
+        align-items: center; 
         box-sizing: border-box;
     }
-    header img{
 
+    header img {
         border: none;
+        max-width: 200px; 
+        margin-bottom: 10px; 
     }
-    .menu h1{
+
+    .menu {
         font-size: 1.5em;
+        width: 100%; 
+        position: static; 
+        transform: none; 
+        left: auto; 
     }
-    header nav a{
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    header nav a {
         display: block;
-        margin: 10px 0;
-        font-size: .75em;
+        margin: 5px 0; 
+        font-size: 0.75em;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
     }
-    .play img{
+
+    .play img, .experience img {
         max-width: 90%;
     }
-    .experience img{
+
+    .experience-intro p {
         max-width: 90%;
     }
-    .experience-intro p{
-        max-width: 90%;
-    }
-    div{
+
+    div {
         margin: 20px;
     }
 }
