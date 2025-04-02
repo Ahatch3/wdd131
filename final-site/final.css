@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+
+
+:root {
+    /* Color Palette */
+    --primary-color: #293339;
+    --secondary-color: #EDF2F4;
+    --accent1-color: #72746F;
+    --accent2-color: #96031A;
+  
+    /* Fonts */
+    --heading-font: "IM Fell French Canon SC";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: var(
+      --primary-color
+    ); /* headlines on a white background */
+    --headline-color-on-color: white; /* headlines on a colored background */
+    --paragraph-color-on-white: var(
+      --primary-color
+    ); /* paragraph text on a white background */
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */
+    --paragraph-background-color: var(--primary-color);
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--primary-color);
+  }
+
+
+/* HEADER INFO, REUSE FOR ALL PAGES */
+
+    header{
+        display: flex;
+
+        align-items: center;
+
+        width: 100%;
+
+        background-color: #293339;
+
+        z-index: 1;
+
+        font-family: var(--heading-font);
+
+        color: var(--paragraph-color-on-color);
+
+        position: relative;
+
+        padding: 10px;
+
+        box-sizing: border-box;
+
+        flex-grow: 1;
+
+    }
+
+    .menu{
+        flex-direction: column;
+
+        flex-grow: 1;
+
+        text-align: center;
+
+        font-size: 2em;
+
+        position: absolute; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        text-align: center; 
+        width: 100%; 
+    }
+
+    header img{
+
+        align-items: left;
+        
+        z-index: 0;
+
+        max-width: 250px;
+
+        border-radius: 50%;
+
+        border: var(--accent1-color) solid 2px;
+    }
+
+    header nav a{
+
+        margin: 20px;
+
+        text-decoration: none;
+
+        color: var(--secondary-color);
+    }
+
+/* END OF HEADER INFO */
+
+
+
+
+
+
+/* This is where Main CSS begins */
+
+
+body{
+
+    font-family: var(--paragraph-font);
+
+    margin: 0;
+
+    background-color: var(--secondary-color);
+}
+
+h1,h2,h3{
+
+
+    font-family: var(--heading-font);
+}
+
+main{
+    display: flex;
+
+    flex-direction: column;
+
+    width: 100%;
+
+    text-align: center;
+
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.play img{
+
+    max-width: 300px;
+
+    max-height: 300px;
+
+    border-radius: 5px;
+}
+
+.website-intro{
+    
+    margin: 20px;
+
+
+    max-width: 800px;
+    width: 100%;
+
+}
+.website-intro div{
+    margin-bottom: 10px;
+}
+
+.play{
+
+    max-width: 500px;
+
+    padding: 20px;
+
+    border-bottom: #293339 solid 1px;
+}
+
+
+
+
+/* This is where page 2 HTML begins */
+
+.experience div{
+
+    max-width: 1000px;
+
+    padding-bottom: 20px;
+
+    padding-top: 10px;
+
+}
+.experience h3{
+
+    padding-top: 20px;
+}
+
+.experience-holder{
+
+    display: none;
+}
+
+.experience img{
+
+    margin-top: 75px;
+
+    max-width: 300px;
+    max-height: 300px;
+
+    border-radius: 5px;
+}
+
+
+.experience-intro{
+
+    margin-top: 50px;
+}
+
+.experience-intro p{
+
+    max-width: 500px;
+}
+
+select{
+
+    color: var(--paragraph-color-on-color);
+
+    background-color: var(--accent1-color);
+
+    margin: 50px;
+
+    text-align: center;
+
+    border-radius: 5px;
+
+    width: 250px;
+
+    font-family: Lato;
+}
+
+button{
+
+    text-align: center;
+
+    border-radius: 5px;
+
+    width: 250px;
+
+    color: var(--paragraph-color-on-color);
+
+    background-color: var(--accent1-color);
+
+    font-family: Lato;
+}
+
+.spoilers{
+
+    display: none;
+
+}
+
+.spoil{
+
+    padding-top: 50px;
+}
+
+
+
+
+@media (max-width: 800px) {
+    header, main, footer {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
+        box-sizing: border-box;
+    }
+    header img{
+
+        border: none;
+    }
+    .menu h1{
+        font-size: 1.5em;
+    }
+    header nav a{
+        display: block;
+        margin: 10px 0;
+        font-size: .75em;
+    }
+    .play img{
+        max-width: 90%;
+    }
+    .experience img{
+        max-width: 90%;
+    }
+    .experience-intro p{
+        max-width: 90%;
+    }
+    div{
+        margin: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+/* FOOTER INFO, REUSE FOR ALL PAGES */
+
+
+footer{
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    background-color: #293339;
+
+    z-index: 0;
+
+    font-family: var(--heading-font);
+
+    color: var(--paragraph-color-on-color);
+
+    position: relative;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+}
+
+footer img{
+
+    align-items: left;
+
+    max-width: 150px;
+
+    border-radius: 50%;
+
+    border: var(--accent1-color) solid 2px;
+
+}
+
+.trademark{
+
+    flex-direction: column;
+
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    text-align: center;
+
+    width: 100%;
+
+}

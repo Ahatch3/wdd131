@@ -5,31 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a website designed to expose people to the world of musical theatre.">
     <meta name="author" content="Austin Hatch">
-    <title>The Melodic Map</title>
+    <link rel="stylesheet" href="final.css">
+    <script defer src="experience.js"></script>
+    <title>The Musical Experience</title>
+    <link rel="icon" href="images/logo-2.png" type="image/png">
 </head>
 <body>
 
     <header>
-        <h1>
-            The Melodic Map
-        </h1>
 
         <img src="images/logo-1.png" alt="This is the logo for my website.">
 
-        <nav>
-            <a href="">Home</a>
-            <a href=""></a>
-        </nav>
+        <div class="menu">
+            <h1>
+                The Musical Experience
+            </h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="experience.html">Experience</a>
+            </nav>
+        </div>
 
     </header>
 
+
+
     <main>
+        
+        <div class="experience-intro">
+            <h2 >
+                Welcome to the Musical Experience
+            </h2>
+
+            <div >
+                <p>All you need to do to make this work is choose a play from the home index that you would like to know more about.</p> 
+                <p>
+                    After that, you will be given the chance to not only read what the play is about, but you'll also get to listen to some of the best songs in that play, and you'll get to choose whether or not you want to read extra details about the ending of each play.
+                </p>
+                <p>
+                    Enjoy.
+                </p>
+            </div>
+        </div>
+
+        <select id="musicalSelect">
+            <option value="">-- Select a Musical --</option>
+        </select>
+        
+        <div id="experience-holder">
+
+        </div>
 
     </main>
 
+
+
+
     <footer>
+
+        <img src="images/logo-1.png" alt="This is the logo for my website.">
+
+        <div class="trademark">
+            © 2025 TheMelodicMap. All rights reserved. This is not a real website.
+        </div>
 
     </footer>
     
+
+    <audio id="audioPlayer" src=""></audio>
 </body>
 </html>
