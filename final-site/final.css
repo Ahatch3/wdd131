@@ -222,6 +222,8 @@ select{
 
     border-radius: 5px;
 
+    border: var(--primary-color) solid 1px;
+
     width: 250px;
 
     font-family: Lato;
